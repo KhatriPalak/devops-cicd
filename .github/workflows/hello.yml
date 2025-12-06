@@ -1,19 +1,19 @@
 on: [push]
 jobs:
-	greet:
-		runs-on: ubuntu-latest
+ greet:
+  runs-on: ubuntu-latest
 		
-		steps:
-		-name: Print greeting
-		 run: echo "Hello from github Actions!"
+  steps:
+   - name: Print greeting
+     run: echo "Hello from github Actions!"
  
-		-name: Print date and time
-		 run: date
+   - name: Print date and time
+     run: date
 
 		
-		-name: Print current user
-		 run: whoami
+   - name: Print current user
+     run: whoami
 
 		
-		-name: Print working directory
-		 run: pwd
+   - name: Print working directory
+     run: pwd
